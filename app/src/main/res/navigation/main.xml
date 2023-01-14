@@ -13,6 +13,13 @@
     tools:layout="@layout/fragment_profile"/>
 
     <fragment
+        android:id="@+id/home"
+        android:name="com.example.userwarranty.navigation.home_Fragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_"/>
+
+
+    <fragment
         android:id="@+id/setting"
         android:name="com.example.userwarranty.navigation.settingFragment"
         android:label="setting"

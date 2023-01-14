@@ -4,21 +4,24 @@
     <item
         android:id="@+id/profile"
         android:icon="@drawable/profile"
-        android:title=" profile" />
-
+        android:title=" Profile" />
     <item
-        android:id="@+id/profiles"
-        android:icon="@drawable/profile"
-        android:title=" profiles" />
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title=" Home" />
 
     <item
         android:id="@+id/booking"
         android:icon="@drawable/booking"
         android:title="Booking" />
     <item
-        android:id="@+id/menubox"
-        android:icon="@drawable/box"
-        android:title="product " />
+        android:id="@+id/danhgiaa"
+        android:icon="@drawable/danhgia"
+        android:title="Evaluate " />
+    <item
+        android:id="@+id/thongbao"
+        android:icon="@drawable/thongbao"
+        android:title="Nofication " />
 
     <item
         android:title="orther">
@@ -27,6 +30,10 @@
                 android:id="@+id/setting"
                 android:icon="@drawable/caidat"
                 android:title="Setting " />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="Log Out" />
         </menu>
     </item>
 
