@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView =  findViewById(R.id.bottom_nav);
         viewPager = findViewById(R.id.viewpage);
 
-
         adapterViewpage = new AdapterViewpage(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         viewPager.setAdapter(adapterViewpage);
         bottomNavigationView.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
