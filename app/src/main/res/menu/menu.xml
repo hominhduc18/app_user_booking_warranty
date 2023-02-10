@@ -2,41 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/profile"
-        android:icon="@drawable/profile"
-        android:title=" Profile" />
+        android:id="@+id/trang_chu"
+        android:icon="@drawable/home1"
+        android:title=" Trang Chủ " />
     <item
-        android:id="@+id/home"
-        android:icon="@drawable/home"
-        android:title=" Home" />
+        android:id="@+id/dat_lich"
+        android:icon="@drawable/datlich"
+        android:title=" Đặt Lịch" />
 
     <item
-        android:id="@+id/booking"
-        android:icon="@drawable/booking"
-        android:title="Booking" />
+        android:id="@+id/lien_he"
+        android:icon="@drawable/lienhe2"
+        android:title="Liên Hệ " />
     <item
-        android:id="@+id/danhgiaa"
-        android:icon="@drawable/danhgia"
-        android:title="Evaluate " />
-    <item
-        android:id="@+id/thongbao"
-        android:icon="@drawable/thongbao"
-        android:title="Nofication " />
-
-    <item
-        android:title="orther">
-        <menu>
-            <item
-                android:id="@+id/setting"
-                android:icon="@drawable/caidat"
-                android:title="Setting " />
-            <item
-                android:id="@+id/logout"
-                android:icon="@drawable/logout"
-                android:title="Log Out" />
-        </menu>
-    </item>
-
-
+        android:id="@+id/ca_nhan"
+        android:icon="@drawable/account"
+        android:title="Cá Nhân" />
 
 </menu>

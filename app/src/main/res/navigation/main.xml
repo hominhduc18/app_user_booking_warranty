@@ -3,27 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    app:startDestination="@id/profile"
+    app:startDestination="@id/trang_chu"
 
     >
     <fragment
-    android:id="@+id/profile"
-    android:name="com.example.userwarranty.navigation.profileFragment"
-    android:label="profile"
-    tools:layout="@layout/fragment_profile"/>
+    android:id="@+id/trang_chu"
+    android:name="com.example.userwarranty.fragment.trangchuFragment"
+    android:label="Trang Chủ"
+    tools:layout="@layout/fragment_trangchu"/>
 
     <fragment
-        android:id="@+id/home"
-        android:name="com.example.userwarranty.navigation.home_Fragment"
-        android:label="Home"
-        tools:layout="@layout/fragment_home_"/>
+        android:id="@+id/dat_lich"
+        android:name="com.example.userwarranty.fragment.datlichFragment"
+        android:label="Đặt Lịch"
+        tools:layout="@layout/fragment_datlich"/>
 
 
     <fragment
-        android:id="@+id/setting"
-        android:name="com.example.userwarranty.navigation.settingFragment"
-        android:label="setting"
-        tools:layout="@layout/fragment_setting"/>
+        android:id="@+id/lien_he"
+        android:name="com.example.userwarranty.fragment.lienheFragment"
+        android:label="Liên Hệ"
+        tools:layout="@layout/fragment_lienhe"/>
+
+    <fragment
+        android:id="@+id/ca_nhan"
+        android:name="com.example.userwarranty.fragment.canhanFragment"
+        android:label="Cá Nhân"
+        tools:layout="@layout/fragment_canhan"/>
 
 
 </navigation>

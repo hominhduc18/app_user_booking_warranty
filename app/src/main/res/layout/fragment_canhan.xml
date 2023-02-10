@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.canhanFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#409FEA" />
+
+    <!--Top Header Layout-->
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="300dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/user"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:text="Thông Tin Tài Khoản " />
+
+                <ImageView
+                    android:id="@+id/info"
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/left"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="400dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/history"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:text="Lịch Sử Đặt Lịch " />
+
+                <ImageView
+                    android:id="@+id/history_book"
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dp"
+                    android:background="@drawable/left"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="500dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/padlock"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:text="Đăng Xuất" />
+
+                <ImageView
+                    android:id="@+id/logout"
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:background="@drawable/left"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
