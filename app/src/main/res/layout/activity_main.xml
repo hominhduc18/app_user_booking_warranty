@@ -20,6 +20,7 @@
         app:itemBackground="@color/purple_700"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
         />
 
 </RelativeLayout>

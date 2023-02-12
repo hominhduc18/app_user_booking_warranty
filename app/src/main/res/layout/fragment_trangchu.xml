@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     tools:context=".fragment.trangchuFragment">
 
     <ScrollView
@@ -67,9 +68,10 @@
                         android:padding="5dp">
 
                         <ImageView
+                            android:id="@+id/img_dien"
                             android:layout_width="40dp"
                             android:layout_height="34dp"
-                            android:background="@drawable/electrician"
+                            android:src="@drawable/electrician"
                             android:scaleType="fitXY" />
 
                         <TextView
@@ -93,9 +95,10 @@
                         android:padding="5dp">
 
                         <ImageView
+                            android:id="@+id/img_dienlanh"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/fridge"
+                            android:src="@drawable/fridge"
                             android:scaleType="fitXY" />
 
                         <TextView
@@ -120,9 +123,10 @@
                         android:padding="5dp">
 
                         <ImageView
+                            android:id="@+id/img_ongnc"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/waterpipe"
+                            android:src="@drawable/waterpipe"
                             android:scaleType="fitXY" />
 
                         <TextView
@@ -166,9 +170,10 @@
                         android:padding="5dp">
 
                         <ImageView
+                            android:id="@+id/img_IT"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/itsupport"
+                            android:src="@drawable/itsupport"
                             android:scaleType="fitXY" />
 
                         <TextView
@@ -192,9 +197,10 @@
                         android:padding="5dp">
 
                         <ImageView
+                            android:id="@+id/img_phone"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/phone"
+                            android:src="@drawable/phone"
                             android:scaleType="fitXY" />
 
                         <TextView
@@ -217,9 +223,10 @@
                         android:padding="5dp">
 
                         <ImageView
+                            android:id="@+id/img_nangluong"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/nangluong"
+                            android:src="@drawable/nangluong"
                             android:scaleType="fitXY" />
 
                         <TextView
@@ -262,9 +269,10 @@
                         android:padding="5dp">
 
                         <ImageView
+                            android:id="@+id/img_suanha"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/suanha"
+                            android:src="@drawable/suanha"
                             android:scaleType="fitXY" />
 
                         <TextView
@@ -288,9 +296,10 @@
                         android:padding="5dp">
 
                         <ImageView
+                            android:id="@+id/img_vesinh"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/vesinh"
+                            android:src="@drawable/vesinh"
                             android:scaleType="fitXY" />
 
                         <TextView
@@ -315,9 +324,10 @@
                         android:padding="5dp">
 
                         <ImageView
+                            android:id="@+id/img_khac"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/khac"
+                            android:src="@drawable/khac"
                             android:scaleType="fitXY" />
 
                         <TextView
