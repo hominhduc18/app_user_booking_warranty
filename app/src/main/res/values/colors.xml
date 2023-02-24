@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="corner">#58B0D8</color>
     <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#1EF30F</color>
+    <color name="purple_500">#83E37D</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
@@ -10,4 +11,5 @@
     <color name="blue">#A4E4F8</color>
     <color name="inactive">#C4C4C4</color>
     <color name="active">#50C2C9</color>
+    <color name="greens">#FF0DC814</color>
 </resources>

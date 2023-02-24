@@ -1,11 +1,46 @@
 package com.example.userwarranty.Model.Request;
 
 public class User {
+    private static User instance;
+    private String _id;
+
+    /// Singleton
+    public User() {
+        // private constructor to prevent instantiation
+    }
+
+    public static User getInstance() {
+        if (instance == null) {
+            instance = new User();
+        }
+        return instance;
+    }
+
+    public void setUserId(String userId) {// để logout và xóa
+        this._id = userId;
+    }
+
+    public String getUserId() {// để lưu id
+        return _id;
+    }
+
+    ///////////////////////
     private String  username;
     private String  email;
     private String  password;
     private String   phone;
     private String  accessToken;
+    private String address;
+
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
 
 
     public String getAccessToken() {
@@ -51,17 +86,18 @@ public class User {
 
 
 
-    public User(String username, String email, String password, String phone, String accessToken) {
+    public User(String username, String email, String password, String phone, String accessToken, String _id, String address) {
         this.username = username;
         this.email = email;
         this.password = password;
         this.phone = phone;
         this.accessToken = accessToken;
+        this._id = _id;
+        this.address = address;
 
     }
 
-    public User() {
-    }
+
 
     @Override
     public String toString() {
@@ -71,6 +107,7 @@ public class User {
                 ", password='" + password + '\'' +
                 ", phone=" + phone +
                 ", token=" + accessToken +
+                ", address=" + address +
                 '}';
     }
 }

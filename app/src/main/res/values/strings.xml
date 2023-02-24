@@ -66,26 +66,16 @@
         It has been created to make possible construction of any lists with XML layouts as an item
         which can be customized vastly while improving on the efficiency of ListViews and GridViews.
     </string>
-    <string name="info_dien">
-        Qúy khách Hàng vui lòng liên hệ hoặc đặt lịch để được kỹ thuật tư vấn cụ thể
-    </string>
-    <string name="info_dien1">Thông thường đội thợ sửa điện tại nhà chuyên nghiệp được hiểu là người có được đào tạo ở các môi trường chuyên nghiệp và đạt được những bằng cấp cụ thể như Trung cấp điện, Cao đẳng điện – điện tử, Kỹ sư điện. Những người này nếu có hành nghề lắp đặt sửa điện thì phải học thêm các khóa đào tạo ngắn hạn về đảm bảo an toàn điện, về bảo
-    hiểm…và được thực tập trong thực tế nhiều để chính thức có thể hành nghề độc lập.
-    </string>
-    <string name="fix">
-        Thợ sửa điện tại nhà là làm những gì?
 
-        Chỉ có thợ điện EVN là những người được phép sửa điện trên đường dây truyền tải, từ cột điện cho đến tận đồng hồ điện tổng của khách hàng tiêu thụ điện.
 
-        Phần điện cấp nguồn cho mọi hoạt động sử dụng điện của người dân phía sau công tơ điện chính là phần mà người tiêu dùng điện phải tự chịu trách nhiệm sửa chữa nếu có nhu cầu.
 
-        Lúc này, các tìm thợ sửa điện tại nhà trong lĩnh vực dân dụng của các dịch vụ sửa chữa điện tại tphcm như 1FIX™ chính là người đáp ứng các nhu cầu đó cho khách hàng.
-
-        1FIX™ mô tả tóm tắc các tình huống mà thợ sửa điện tại nhà của chúng tôi có thể phục vụ quý khách như bên dưới
-    </string>
     <string name="name_end">
         Khi có nhu cầu lắp đặt, sửa chữa hay liên hệ ngay cho chúng tôi.Rất hân hạnh được phục vụ quý khách
     </string>
+    <string name="cntt">Với nhân viên CNTT có kinh nghiệm thường có khả năng giải quyết các vấn đề khó khăn và đưa ra các giải pháp sáng tạo và hiệu quả,để đáp ứng các nhu cầu của khách hàng và cải thiện hoạt động của tổ chức</string>
+    <string name="dien">Với nhân viên dien có kinh nghiệm thường có khả năng giải quyết các vấn đề khó khăn và đưa ra các giải pháp sáng tạo và hiệu quả,để đáp ứng các nhu cầu của khách hàng và cải thiện hoạt động của tổ chức</string>
+    <string name="phone">Với nhân viên sửa điện thoại  có kinh nghiệm thường có khả năng giải quyết các vấn đề khó khăn và đưa ra các giải pháp sáng tạo và hiệu quả,để đáp ứng các nhu cầu của khách hàng và cải thiện hoạt động của tổ chức</string>
+    <string name="dienlanh">Với nhân viên sửa điện lạnh có kinh nghiệm thường có khả năng giải quyết các vấn đề khó khăn và đưa ra các giải pháp sáng tạo và hiệu quả,để đáp ứng các nhu cầu của khách hàng và cải thiện hoạt động của tổ chức</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- Preference Titles -->
@@ -102,4 +92,8 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="channel_name">Title</string>
+    <string name="channel_description">Content</string>
+
 </resources>
