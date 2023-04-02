@@ -36,6 +36,7 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.example.userwarranty.Model.Api.ApiClient;
+import com.example.userwarranty.Model.Request.User;
 import com.example.userwarranty.Model.Request.maintenance;
 import com.example.userwarranty.Notifications.Applicationss;
 import com.example.userwarranty.R;
@@ -70,7 +71,7 @@ public class datlichFragment extends Fragment  {
         editText_ten = view.findViewById(R.id.editText_ten);
         editText_SĐT = view.findViewById(R.id.editText_SĐT);
         editText_Đc =  view.findViewById(R.id.editText_Đc);
-        editText_TG =  view.findViewById(R.id.editText_TG);
+
         editText_cv =  view.findViewById(R.id.editText_cv);
         editText_GC =  view.findViewById(R.id.editText_GC);
         editText_ngay =  view.findViewById(R.id.editText_ngay);
@@ -114,9 +115,6 @@ public class datlichFragment extends Fragment  {
                 }
                 else  if(TextUtils.isEmpty(editText_ngay.getText().toString())){
                     Toast.makeText(getActivity(),"\"Day not verified, Please verify your Day.\"",Toast.LENGTH_LONG).show();
-                }
-                else  if(TextUtils.isEmpty(editText_TG.getText().toString())){
-                    Toast.makeText(getActivity(),"\"Time not verified, Please verify your Time.\"",Toast.LENGTH_LONG).show();
                 }
                 else  if(TextUtils.isEmpty(editText_cv.getText().toString())){
                     Toast.makeText(getActivity(),"\"CV not verified, Please verify your CV.\"",Toast.LENGTH_LONG).show();
@@ -179,14 +177,17 @@ public class datlichFragment extends Fragment  {
     }
     private void userBooking() {
 
+        String _id = User.getInstance().getUserId();
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yyyy");
         userMaintenance.setUsername(editText_ten.getText().toString());
         userMaintenance.setPhone(editText_SĐT.getText().toString());
         userMaintenance.setAddress(editText_Đc.getText().toString());
-       userMaintenance.setDate(date);
-        userMaintenance.setStartHour( editText_TG.getText().toString());
+        userMaintenance.setDate(date);
+
         userMaintenance.setDescription(editText_cv.getText().toString());
         userMaintenance.setNoted(editText_GC.getText().toString());
+
+        userMaintenance.setUser(_id);
 
         Call<maintenance> maintenanceCall = ApiClient.getUserService().app_booking(userMaintenance);
         maintenanceCall.enqueue(new Callback<maintenance>() {

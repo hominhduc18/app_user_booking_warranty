@@ -69,8 +69,6 @@ public class Activity_listView_history extends AppCompatActivity {
                     userAdapter.setData(userList);
                     recyclerView.setAdapter(userAdapter);
 
-
-
                 } else {
                     Toast.makeText(Activity_listView_history.this, "Please list view", Toast.LENGTH_LONG).show();
 

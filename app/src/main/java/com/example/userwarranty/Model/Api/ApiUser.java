@@ -26,6 +26,10 @@ public interface ApiUser {
     Call<User> getLogout(@Header("token") String authToken);
 
 
+
+    @POST("/v1/user/changepassword")
+    Call<otp> changePass(@Body otp user);
+
     @GET("/v1/user/get/An/User/{id}")
     Call<User> getInfor(@Path("id") String id);
 
@@ -40,7 +44,7 @@ public interface ApiUser {
     @POST("v1/user/useremailsend")
     Call<otp> otpUserCall(@Body otp otP);
 
-    @POST("v1/maintenance/app/add/booking")
+    @POST("/v1/maintenance/useraddBooking")
     Call<maintenance> app_booking(@Body maintenance maintenances);
 }
 

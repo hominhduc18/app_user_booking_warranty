@@ -81,19 +81,11 @@ dependencies {
 
 //    implementation 'org.osmdroid:osmdroid-android:6.1.5'
 
-//    implementation 'org.osmdroid:osmdroid-wms:6.1.10'
-//    implementation 'org.osmdroid:osmdroid-mapsforge:6.1.10'
-//    implementation 'org.osmdroid:osmdroid-geopackage:6.1.10'
+        implementation 'org.osmdroid:osmdroid-android:6.1.10'
+        implementation 'org.osmdroid:osmdroid-wms:6.1.10'
+        implementation 'org.osmdroid:osmdroid-mapsforge:6.1.10'
 
-    implementation 'org.osmdroid:osmdroid-android:6.1.10'
-//    implementation 'org.osmdroid:osmdroid-mapsforge:6.1.10'
-//    implementation 'org.osmdroid:osmdroid-wms:6.1.10'
-//    implementation 'org.osmdroid:osmdroid-geopackage:6.1.10'
-//    implementation 'org.osmdroid:osmdroid-geocode:6.1.10'
-//    implementation 'org.osmdroid:osmdroid-third-party:6.1.10'
-//    implementation 'com.github.MKergall.osmbonuspack:OSMBonusPack:v7.4.0'
-//
-//    implementation 'org.slf4j:slf4j-android:1.7.30'
+
 
 
 
