@@ -37,13 +37,15 @@ public interface ApiUser {
     Call<User>updateUser(@Path("id") String id,
                          @Body User user);
 
-    @GET("/v1/maintenance/getUserAMaintenance/{id}")
+//    @GET("/v1/maintenance/getUserAMaintenance/{id}")
+    @GET("/v1/user/{id}")
     Call<maintenance> get_booking_ById(@Path("id") String id);
 
 
     @POST("v1/user/useremailsend")
     Call<otp> otpUserCall(@Body otp otP);
 
+//    @POST("/v1/maintenance/useraddBooking")
     @POST("/v1/maintenance/useraddBooking")
     Call<maintenance> app_booking(@Body maintenance maintenances);
 }

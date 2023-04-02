@@ -65,6 +65,7 @@ public class Activity_changePassword extends AppCompatActivity {
             otp userRequest = new otp();
             userRequest.setEmail(editEmail.getText().toString());
             userRequest.setCode(edit_otp.getText().toString());
+            userRequest.setNewPassword(new_pass.getText().toString());
 
             Call<otp> changePassResponseCall = ApiClient.getUserService().changePass(userRequest);
             changePassResponseCall.enqueue(new Callback<otp>() {

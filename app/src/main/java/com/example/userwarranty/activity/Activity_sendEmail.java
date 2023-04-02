@@ -62,7 +62,7 @@ public class Activity_sendEmail extends AppCompatActivity {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            startActivity(new Intent(Activity_sendEmail.this, Activity_OTP.class).putExtra("data",otpResponse.getEmail()));
+                            startActivity(new Intent(Activity_sendEmail.this, Activity_changePassword.class).putExtra("data",otpResponse.getEmail()));
                         }
                     },700);
 
