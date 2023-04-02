@@ -49,9 +49,9 @@ public class RecleViewAdapter extends RecyclerView.Adapter<RecleViewAdapter.View
 
         String day = maintenanceRespond.getDate();
 
-       holder.textView_name.setText(username);
-       holder.textView_BH.setText(des);
-       holder.textView_day.setText(day);
+        holder.textView_name.setText(username);
+        holder.textView_BH.setText(des);
+        holder.textView_day.setText(day);
 
 
 

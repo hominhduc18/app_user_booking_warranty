@@ -4,11 +4,13 @@ public class otp {
     private String email;
     private String code;
     private String expiresIn;
+    private String newPassword;
+
 
     public otp() {
     }
 
-    public otp(String email, String code,String expiresIn) {
+    public otp(String email, String code,String expiresIn, String newPassword) {
         this.email = email;
         this.code = code;
         this.expiresIn = expiresIn;
@@ -44,6 +46,15 @@ public class otp {
                 "email='" + email + '\'' +
                 ", code=" + code +
                 ", expiresIn=" + expiresIn +
+                ", newPassword=" + newPassword +
                 '}';
+    }
+
+    public String getNewPassword() {
+        return newPassword;
+    }
+
+    public void setNewPassword(String newPassword) {
+        this.newPassword = newPassword;
     }
 }

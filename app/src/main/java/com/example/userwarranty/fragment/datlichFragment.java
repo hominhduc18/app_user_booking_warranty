@@ -40,7 +40,7 @@ import com.example.userwarranty.Model.Request.User;
 import com.example.userwarranty.Model.Request.maintenance;
 import com.example.userwarranty.Notifications.Applicationss;
 import com.example.userwarranty.R;
-import com.example.userwarranty.activity.Activity_listView_history;
+//import com.example.userwarranty.activity.Activity_listView_history;
 import com.example.userwarranty.activity.MainActivity;
 
 import java.sql.Time;
@@ -63,7 +63,7 @@ public class datlichFragment extends Fragment  {
     private  View view;
     private EditText editText_ten, editText_SĐT, editText_Đc, editText_cv, editText_GC;
     private Button btn_dat_lich;
-    private TextView editText_TG,editText_ngay;
+    private TextView editText_ngay;
     private maintenance userMaintenance = new maintenance();
     private String date;
 
@@ -71,18 +71,12 @@ public class datlichFragment extends Fragment  {
         editText_ten = view.findViewById(R.id.editText_ten);
         editText_SĐT = view.findViewById(R.id.editText_SĐT);
         editText_Đc =  view.findViewById(R.id.editText_Đc);
-
         editText_cv =  view.findViewById(R.id.editText_cv);
         editText_GC =  view.findViewById(R.id.editText_GC);
         editText_ngay =  view.findViewById(R.id.editText_ngay);
         btn_dat_lich = view.findViewById(R.id.btn_dat_lich);
 
-        editText_TG.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                show_TimePickerDialog();
-            }
-        });
+
         editText_ngay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -236,24 +230,24 @@ public class datlichFragment extends Fragment  {
 
 
     }
-    public void show_TimePickerDialog(){
-        Calendar calendar = Calendar.getInstance();
-        final int hour = calendar.get(Calendar.HOUR_OF_DAY);
-        int minute = calendar.get(Calendar.MINUTE);
-        TimePickerDialog timePickerDialog = new TimePickerDialog(getActivity(), new TimePickerDialog.OnTimeSetListener() {
-            @Override
-            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-
-                String time = + hourOfDay + ":" + minute;
-                editText_TG.setText(time);
-                Toast.makeText(getActivity(),String.format("Selected Time: %d:%d",hourOfDay,minute),
-                        Toast.LENGTH_LONG).show();
-            }
-        }, hour, minute, true);
-
-        timePickerDialog.show();
-
-    }
+//    public void show_TimePickerDialog(){
+//        Calendar calendar = Calendar.getInstance();
+//        final int hour = calendar.get(Calendar.HOUR_OF_DAY);
+//        int minute = calendar.get(Calendar.MINUTE);
+//        TimePickerDialog timePickerDialog = new TimePickerDialog(getActivity(), new TimePickerDialog.OnTimeSetListener() {
+//            @Override
+//            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+//
+//                String time = + hourOfDay + ":" + minute;
+//                editText_TG.setText(time);
+//                Toast.makeText(getActivity(),String.format("Selected Time: %d:%d",hourOfDay,minute),
+//                        Toast.LENGTH_LONG).show();
+//            }
+//        }, hour, minute, true);
+//
+//        timePickerDialog.show();
+//
+//    }
 
 //    private void Send_Notification(){
 //        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);

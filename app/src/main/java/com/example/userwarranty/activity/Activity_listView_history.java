@@ -64,7 +64,7 @@ public class Activity_listView_history extends AppCompatActivity {
 
                     maintenance maintenanceRespond = response.body();
                     // neu ko goi ben Recle setData
-                userList.add(maintenanceRespond);
+                    userList.add(maintenanceRespond);
 //                userAdapter.notifyDataSetChanged();
                     userAdapter.setData(userList);
                     recyclerView.setAdapter(userAdapter);
